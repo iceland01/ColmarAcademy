@@ -1,0 +1,441 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+    h6 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:#424949;
+
+}
+
+  p{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: grey;
+  line-height: 1.3;
+
+}
+.container {
+  margin:auto;
+  max-width: 1050px;
+}
+
+header .container {
+  display:flex;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo img {
+  height: 3em;
+  padding-left: 24px;
+}
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ span#Colmar{
+   color:#424949;
+ }
+
+ span#Academy {
+  color:grey;
+}
+
+nav.desktop {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 24px;
+}
+
+nav.desktop a {
+  font-weight: 600;
+  padding-left: 1rem;
+  color:#424949;
+  text-decoration: none;
+  transition: color 0.75s linear;
+}
+
+nav.desktop a:hover{
+  color:darkgrey;
+}
+
+nav.mobile {
+  display: none;
+  width: 100%;
+}
+@media only screen and (max-width:480px) {
+  nav.desktop {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px;
+  }
+}
+
+
+
+
+
+
+
+.main-banner {
+  background-color: #EAEDED;
+}
+
+.main-banner .container {
+  display: flex;
+}
+
+
+.left-section {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.left-section img {
+  width: 100%;
+}
+
+.right-section {
+  display:flex;
+  align-items: center;
+  width:440px;
+}
+
+
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  padding-left: 20px;
+  margin-right: 60px;
+  color:#424949;
+}
+
+.tagline h1 {
+  font-size:2.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+
+.tagline h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1.5rem 0;
+  line-height: 1.25;
+}
+
+.tagline a {
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  background-color:#424949;
+  padding: 1rem 0;
+  font-weight: 450;
+  transition:background-color 1s ease-out,color 1s ease-out;
+
+}
+.tagline a:hover{
+  background-color:#EAEDED;
+  color: grey;
+}
+
+
+
+
+@media only screen and (max-width:750px) {
+  .main-banner .container {
+    flex-flow: column;
+  }
+  .left-section{
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  .right-section {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/*seccond-banner*/
+.second-banner .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-banner h2 {
+  font-size: 2rem;
+  color:#424949;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.second-banner p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color:dimgrey;
+  padding: 24px 48px 24px 0;
+  line-height: 1.2;
+}
+
+.second-banner .name {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.second-banner .right-section {
+  display: flex;
+  flex-flow: column;
+  border-left: 1px solid #EAEDED;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EAEDED;
+}
+
+.box a {
+  text-decoration: none;
+  color: blue;
+  font-size: 0.9rem;
+}
+.box a:hover{
+  color:black;
+  text-decoration: underline;
+}
+.box img.desktop {
+  padding: 1rem;
+  width:35%;
+}
+
+.third-info {
+  background-color: lightgrey;
+}
+
+
+.second-banner .mobile{
+  display: none;
+}
+
+
+@media only screen and (max-width:750px) {
+  .second-banner .left-section {
+    display: none;
+  }
+  img.desktop {
+    display: none;
+  }
+  img.mobile {
+    display: flex !important ;
+    width: 95%;
+  }
+  .second-banner .box {
+    flex-flow: column;
+  }
+  .box .content {
+    width: 100%;
+    margin: 1rem 1rem;
+    padding-left: 1rem;
+  }
+
+  .third-info.box {
+    background-color: white;
+  }
+
+  }
+
+/*Third-section*/
+
+ .third-banner{
+  background-color:#EAEDED;
+}
+
+.third-banner .container {
+  display:flex;
+  flex-flow:column;
+}
+
+.headline {
+  width:100%;
+  padding: 2rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.headline h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color:#424949;
+}
+
+.grid-courses{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 72px;
+}
+.course {
+  display: flex;
+  flex-flow: column;
+  width:30%;
+  background-color: white;
+  height: 18rem;
+  margin-bottom: 2rem;
+}
+.course img {
+  width: 100%;
+}
+
+.course-content {
+  margin: 16px 16px 24px 16px;
+}
+
+.course-content h6 {
+  padding-bottom: 1rem;
+}
+.course-content span{
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: grey;
+}
+.course-content p{
+  padding-top: 1rem;
+}
+
+.list-course {
+  display: none;
+}
+@media only screen and (max-width:750px) {
+
+  .third-banner{
+   background-color:white;
+ }
+  .grid-courses{
+    display: none;
+  }
+  .list-course{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    padding: 0 1rem;
+  }
+  .list-course a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #EAEDED;
+    color: #424949;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin: 0.5rem;
+  }
+
+
+  .list-course a:hover {
+    background-color: lightgrey;
+
+  }
+}
+
+
+
+
+
+
+
+.last-banner .container {
+  display: flex;
+  flex: row;
+}
+
+ video {
+   width: 100%;
+ }
+
+ .last-banner h6{
+   padding-top: 1rem;
+ }
+
+.last-banner p {
+  padding-top: 1rem;
+}
+
+.last-banner .right-section {
+  display: flex;
+  flex-flow: column;
+  margin-top: 32px;
+}
+
+.last-banner img {
+  width: 35%;
+  padding: 1rem 1rem;
+}
+
+.last-banner .box {
+  border:none;
+}
+
+
+@media only screen and (max-width:750px) {
+
+  .last-banner .right-section {
+    display: none;
+  }
+  .last-banner .left-section h6,p{
+    display: none;
+  }
+}
+
+
+
+footer {
+  height: 4rem;
+  border-top: 1px solid #EAEDED;
+}
+footer a {
+  text-decoration: none;
+  color: #424949;
+}
+footer .container{
+  display: flex;
+  margin-top: 1rem;
+}
+footer .left-text {
+  margin-left: 1.5rem;
+}
+footer .right-text {
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 1.5rem;
+}
+
+
+@media only screen and (max-width:750px) {
+  .right-text{
+    display: none;
+  }
+}
